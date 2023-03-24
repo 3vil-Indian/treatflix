@@ -1,0 +1,88 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Treatflix is your go-to destination for enjoying Netflix's vast collection of movies and TV shows. With Treatflix, you can get a one-day Netflix account for just 25/-, allowing you to watch your favorite shows and movies in the highest quality without any interruptions. Treat yourself to a day of binge-watching with Treatflix and experience the best that Netflix has to offer!">
+    <meta property="og:title" content="TREATFLIX | By 3rror">
+    <meta property="og:description" content="Treatflix is your go-to destination for enjoying Netflix's vast collection of movies and TV shows. With Treatflix, you can get a one-day Netflix account for just 25/-, allowing you to watch your favorite shows and movies in the highest quality without any interruptions. Treat yourself to a day of binge-watching with Treatflix and experience the best that Netflix has to offer!">
+    <meta property="og:image" content="treatflix.png">
+    <meta property="og:url" content="https://treatflix.com/">
+    <link rel="shortcut icon" href="Your favicon URL here" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/28285cc404.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="Your integrity code here"
+        crossorigin="anonymous"></script>
+    <title>TREATFLIX | By 3rror</title>
+    <link rel="shortcut icon" href="treatflix.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo">TREATFLIX</li>
+            <li class="btn"><span class="fas fa-bars" style="float: right;"></span></li>
+            <div class="items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            
+        </ul>
+    </nav>
+
+    <script>
+       $('nav ul li.btn span').click(function () {
+  $('nav ul div.items').toggleClass("show");
+  $('nav ul li.btn span').toggleClass("show");
+  if ($('nav ul div.items').hasClass("show")) {
+    $('main').hide();
+    $('footer').hide();
+  } else {
+    $('main').show();
+    $('footer').show();
+  }
+});
+
+$('nav ul li div.items li').click(function() {
+  $('nav ul div.items').removeClass("show");
+  $('nav ul li.btn span').removeClass("show");
+  $('main').show();
+  $('footer').show();
+});
+
+
+        // $('nav ul div.items li').click(function () {
+        //     $('nav ul div.items').removeClass("show");
+        //     $('nav ul li.btn span').removeClass("show");
+        //     $('main').css('display', 'block');
+        //     $('footer').css('display', 'block');
+        // });
+    </script>
+    <main>
+        <div class="card">
+            <h2>NETFLIXXX</h2>
+            <p>You will get Netflixxx account id &amp; password.</p>
+            <ul>
+                <li>Price/day: Rs.25/day</li>
+                <li>Video quality: Best</li>
+                <li>Resolution: 4K+HDR</li>
+                <li>Devices: Phone, Tablet, Laptop, TV</li>
+            </ul>
+            <h3>Rs25/day</h3>
+        </div>
+        <div class="video">
+            <p>NOTE: Watch this video below to get @Rs17/day !!.</p>
+            <!-- <iframe src="https://www.youtube.com/embed/your-video-id-here" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
+            <iframe width="350" height="350" src="https://www.youtube.com/embed/aIhcSpwacho" title="How to Get a Free Netflix Account in a Legal Way 2023❤️ #xavierkrish" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Treatflix. All rights reserved.</p>
+    </footer>
+</body>
+</html>
